@@ -44,7 +44,7 @@ dtry=$(grep $homey /etc/passwd)
 
 e=${dtry%%:*}
 
-echo chown -Rf $e:$e /home/$homey
+chown -Rf $e:$e /home/$homey
 
 else
 echo "/home/"$homey "<-- The owner is not mentioned in /etc/passwd"
